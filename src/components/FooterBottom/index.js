@@ -1,7 +1,6 @@
 import React from 'react';
 
-export const FooterBottom = () => {
-    return (
+export const FooterBottom = () => (
             <footer className="footer-bottom">
             <div className="container">
                 <div className="row">
@@ -20,4 +19,3 @@ export const FooterBottom = () => {
             </div>
         </footer>
     )
-}
