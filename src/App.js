@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import { FooterBottom } from './components';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>eRetail</h2>
+      <FooterBottom />
     </div>
   );
 }
