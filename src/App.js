@@ -1,13 +1,11 @@
 import React from 'react';
-import { FooterBottom, Footer, Nav } from './components';
+import { Header } from './Components';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Footer />
-      <FooterBottom />
+      <Header />
     </div>
   );
 }
