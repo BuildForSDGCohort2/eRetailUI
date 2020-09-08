@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.2.0",
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -17,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ignore-path .gitignore"
+    "lint": "eslint . --ignore-path .gitignore",
+    "heroku-postbuild": "yarn build"
   },
   "husky": {
     "hooks": {

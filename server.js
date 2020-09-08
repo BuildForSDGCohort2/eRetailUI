@@ -1,0 +1,16 @@
+/* eslint-disable no-console */
+/* eslint-disable no-use-before-define */
+const express = require("express");
+const path = require("path");
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+
+app.use(express.static(path.resolve(__dirname, "build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "build", "index.html"));
+});
+
+app.listen(PORT);
