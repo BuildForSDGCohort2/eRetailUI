@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Nav } from './Components';
+import { Header, Nav, Collection } from './Components';
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
+      <Collection />
     </div>
   );
 }
