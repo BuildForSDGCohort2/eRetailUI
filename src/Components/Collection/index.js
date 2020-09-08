@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const Collection = () => (
     <div className="section">
@@ -40,4 +40,4 @@ export const Collection = () => (
         </div>
     </div>
 </div>
-)
+);

@@ -1,10 +1,9 @@
-import React from 'react';
-import { Header, Nav, Collection, HotDeal, NewsLetter, Footer } from './Components';
-import './App.css';
+import React from "react";
+import { Collection, Footer, Header, HotDeal, Nav, NewsLetter } from "./Components";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Nav />
       <Collection />
