@@ -1,23 +1,21 @@
 (function ($) {
-  "use strict";
-
   // Mobile Nav toggle
-  $(".menu-toggle > a").on("click", function (e) {
+  $(".menu-toggle > a").on("click", (e) => {
     e.preventDefault();
     $("#responsive-nav").toggleClass("active");
   });
 
   // Fix cart dropdown from closing
-  $(".cart-dropdown").on("click", function (e) {
+  $(".cart-dropdown").on("click", (e) => {
     e.stopPropagation();
   });
 
-  /////////////////////////////////////////
+  /// //////////////////////////////////////
 
   // Products Slick
   $(".products-slick").each(function () {
-    var $this = $(this),
-      $nav = $this.attr("data-nav");
+    const $this = $(this);
+    const $nav = $this.attr("data-nav");
 
     $this.slick({
       slidesToShow: 4,
@@ -27,30 +25,30 @@
       speed: 300,
       dots: false,
       arrows: true,
-      appendArrows: $nav ? $nav : false,
+      appendArrows: $nav || false,
       responsive: [
         {
           breakpoint: 991,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-          },
+            slidesToScroll: 1
+          }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   });
 
   // Products Widget Slick
   $(".products-widget-slick").each(function () {
-    var $this = $(this),
-      $nav = $this.attr("data-nav");
+    const $this = $(this);
+    const $nav = $this.attr("data-nav");
 
     $this.slick({
       infinite: true,
@@ -58,11 +56,11 @@
       speed: 300,
       dots: false,
       arrows: true,
-      appendArrows: $nav ? $nav : false,
+      appendArrows: $nav || false
     });
   });
 
-  /////////////////////////////////////////
+  /// //////////////////////////////////////
 
   // Product Main img Slick
   $("#product-main-img").slick({
@@ -71,7 +69,7 @@
     dots: false,
     arrows: true,
     fade: true,
-    asNavFor: "#product-imgs",
+    asNavFor: "#product-imgs"
   });
 
   // Product imgs Slick
@@ -90,45 +88,45 @@
         settings: {
           vertical: false,
           arrows: false,
-          dots: true,
-        },
-      },
-    ],
+          dots: true
+        }
+      }
+    ]
   });
 
   // Product img zoom
-  var zoomMainProduct = document.getElementById("product-main-img");
+  const zoomMainProduct = document.getElementById("product-main-img");
   if (zoomMainProduct) {
     $("#product-main-img .product-preview").zoom();
   }
 
-  /////////////////////////////////////////
+  /// //////////////////////////////////////
 
   // Input number
   $(".input-number").each(function () {
-    var $this = $(this),
-      $input = $this.find('input[type="number"]'),
-      up = $this.find(".qty-up"),
-      down = $this.find(".qty-down");
+    const $this = $(this);
+    const $input = $this.find('input[type="number"]');
+    const up = $this.find(".qty-up");
+    const down = $this.find(".qty-down");
 
-    down.on("click", function () {
-      var value = parseInt($input.val()) - 1;
+    down.on("click", () => {
+      let value = parseInt($input.val()) - 1;
       value = value < 1 ? 1 : value;
       $input.val(value);
       $input.change();
       updatePriceSlider($this, value);
     });
 
-    up.on("click", function () {
-      var value = parseInt($input.val()) + 1;
+    up.on("click", () => {
+      const value = parseInt($input.val()) + 1;
       $input.val(value);
       $input.change();
       updatePriceSlider($this, value);
     });
   });
 
-  var priceInputMax = document.getElementById("price-max"),
-    priceInputMin = document.getElementById("price-min");
+  const priceInputMax = document.getElementById("price-max");
+  const priceInputMin = document.getElementById("price-min");
 
   priceInputMax.addEventListener("change", function () {
     updatePriceSlider($(this).parent(), this.value);
@@ -157,13 +155,13 @@
       step: 1,
       range: {
         min: 1,
-        max: 999,
-      },
+        max: 999
+      }
     });
 
-    priceSlider.noUiSlider.on("update", function (values, handle) {
-      var value = values[handle];
+    priceSlider.noUiSlider.on("update", (values, handle) => {
+      const value = values[handle];
       handle ? (priceInputMax.value = value) : (priceInputMin.value = value);
     });
   }
-})(jQuery);
+}(jQuery));

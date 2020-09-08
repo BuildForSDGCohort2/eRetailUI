@@ -22,11 +22,7 @@
     "lint": "eslint . --ignore-path .gitignore",
     "heroku-postbuild": "yarn build"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint"
-    }
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
