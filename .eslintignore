@@ -1,10 +1,2 @@
-node_modules
-build
-docs
-docker
-test
-.vscode
-koa/views
-src/generated
-src/assets/
-server.js
+node_modules/
+src/serviceWorker.js
