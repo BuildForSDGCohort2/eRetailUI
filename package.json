@@ -17,14 +17,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint  . --ignore-path .gitignore"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "lint": "eslint . --ignore-path .gitignore"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "yarn run lint"
     }
   },
   "browserslist": {
@@ -40,7 +37,6 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.1.1",
-    "prettier-quick": "^0.0.5"
+    "husky": "^4.3.0"
   }
 }
