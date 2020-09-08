@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+/* eslint-disable import/prefer-default-export */
 import React from "react";
 
 export const HotDeal = () => (
@@ -40,4 +42,4 @@ export const HotDeal = () => (
 				</div>
 			</div>
 		</div>
-)
+);

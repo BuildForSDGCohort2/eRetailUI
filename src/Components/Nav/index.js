@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import React from "react";
 
 export const Nav = () => (
@@ -16,4 +17,4 @@ export const Nav = () => (
         </div>
     </div>
 </nav>
-)
+);

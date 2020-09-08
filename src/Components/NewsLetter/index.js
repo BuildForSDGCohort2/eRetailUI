@@ -1,3 +1,5 @@
+/* eslint-disable no-tabs */
+/* eslint-disable import/prefer-default-export */
 import React from "react";
 
 export const NewsLetter = () => (
@@ -30,4 +32,4 @@ export const NewsLetter = () => (
 				</div>
 			</div>
 		</div>
-)
+);

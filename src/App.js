@@ -1,5 +1,7 @@
 import React from "react";
-import { Collection, Footer, Header, HotDeal, Nav, NewsLetter } from "./Components";
+import {
+  Collection, Footer, Header, HotDeal, Nav, NewsLetter
+} from "./Components";
 
 function App() {
   return (

@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable no-tabs */
+/* eslint-disable import/prefer-default-export */
+import React from "react";
 
 export const Footer = () => (
 		<footer id="footer">
@@ -8,7 +10,8 @@ export const Footer = () => (
 						<div className="col-md-3 col-xs-6">
 							<div className="footer">
 								<h3 className="footer-title">About Us</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 								<ul className="footer-links">
 									<li><a href="/"><i className="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
 									<li><a href="/"><i className="fa fa-phone"></i>+021-95-51-84</a></li>
@@ -73,11 +76,12 @@ export const Footer = () => (
 								<li><a href="/"><i className="fa fa-cc-amex"></i></a></li>
 							</ul>
 							<span className="copyright">
-								 <a target="_blank" rel="noopener noreferrer" href="https://www.templateshub.net">Templates Hub</a>
+                                 <a target="_blank" rel="noopener noreferrer"
+                                 href="https://www.templateshub.net">Templates Hub</a>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-)
+);

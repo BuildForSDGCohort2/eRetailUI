@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import React from "react";
 
 export const Header = () => (
@@ -21,8 +22,8 @@ export const Header = () => (
                 <div className="col-md-3">
                     <div className="header-logo">
                         <a href="/" className="logo">
-                          <h1 style={{color:"#D10024"}}>ERetail.</h1>
-                          <p style={{color:"#fff"}}>A new touch to shopping</p>
+                          <h1 style={{ color: "#D10024" }}>ERetail.</h1>
+                          <p style={{ color: "#fff" }}>A new touch to shopping</p>
                         </a>
                     </div>
                 </div>
@@ -100,4 +101,4 @@ export const Header = () => (
         </div>
     </div>
 </header>
-)
+);
