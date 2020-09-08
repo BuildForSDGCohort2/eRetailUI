@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Nav, Collection } from './Components';
+import { Header, Nav, Collection, HotDeal, NewsLetter, Footer } from './Components';
 import './App.css';
 
 function App() {
@@ -8,6 +8,9 @@ function App() {
       <Header />
       <Nav />
       <Collection />
+      <HotDeal />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }
